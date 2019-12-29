@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="engine.cpp" />
     <ClCompile Include="Individual.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Matrix.cpp" />
@@ -131,10 +132,13 @@
     <ClCompile Include="PsmMutation.cpp" />
     <ClCompile Include="RsmMutation.cpp" />
     <ClCompile Include="Selection.cpp" />
+    <ClCompile Include="split.cpp" />
     <ClCompile Include="TournamentSelection.cpp" />
+    <ClCompile Include="trim.cpp" />
     <ClCompile Include="TSP.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="engine.h" />
     <ClInclude Include="Individual.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="Matrix.h" />
@@ -143,7 +147,9 @@
     <ClInclude Include="PsmMutation.h" />
     <ClInclude Include="RsmMutation.h" />
     <ClInclude Include="Selection.h" />
+    <ClInclude Include="split.h" />
     <ClInclude Include="TournamentSelection.h" />
+    <ClInclude Include="trim.h" />
     <ClInclude Include="TSP.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
