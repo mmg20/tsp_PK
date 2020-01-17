@@ -131,11 +131,11 @@
     <ClCompile Include="Population.cpp" />
     <ClCompile Include="PsmMutation.cpp" />
     <ClCompile Include="RsmMutation.cpp" />
-    <ClCompile Include="Selection.cpp" />
     <ClCompile Include="split.cpp" />
     <ClCompile Include="TournamentSelection.cpp" />
     <ClCompile Include="trim.cpp" />
     <ClCompile Include="TSP.cpp" />
+    <ClCompile Include="Selection.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="engine.h" />

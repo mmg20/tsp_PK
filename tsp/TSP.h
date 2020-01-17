@@ -8,5 +8,5 @@ using namespace std;
 class TSP
 {	
 	public:
-		double run(int populationCount, Matrix distanceMatrix);
+		double run(int populationCount, int generations);
 };

@@ -9,6 +9,11 @@
 
 using namespace std;
 
+Matrix::Matrix()
+{
+	this->size = 0;
+}
+
 Matrix::Matrix(string fileName) {  // konstruktor tworz¹cy macierz i uzupe³niaj¹cy j¹ danymi z pliku
 	
 	string file;
@@ -54,6 +59,17 @@ int Matrix::getDistance(int a, int b) {
 
 int Matrix::getSize() {
 	return this->size;
+}
+
+Matrix MatrixProvider::matrix = Matrix();
+
+void MatrixProvider::initialize(Matrix matrix) {
+	MatrixProvider::matrix = matrix;
+}
+
+Matrix MatrixProvider::get()
+{
+	return MatrixProvider::matrix;
 }
 
 

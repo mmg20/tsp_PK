@@ -3,5 +3,7 @@
 class TournamentSelection :
 	public Selection
 {
+	public:
+		Individual select(Population) override;
 };
 
