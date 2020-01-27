@@ -14,7 +14,7 @@ string Commander::getParameter(string parameterName, string description)
 	try
 	{
 		if (!this->cmdOptionExists(parameterName) && this->getCmdOption(parameterName).empty())
-			throw "File parameter [" + parameterName + "] invalid format. " + description;
+			throw "Parametr [" + parameterName + "] posiada nie prawidlowy format. " + description;
 	}
 
 	catch (string msg)

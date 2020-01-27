@@ -21,5 +21,5 @@ Individual Crossover::cross(Individual individualA, Individual individualB)
 
 Individual Crossover::crossoverMethod(Individual, Individual)
 {
-	
+	throw "...";
 }

@@ -11,5 +11,5 @@ Individual Selection::select(Population population)
 
 Individual Selection::selector(Population)
 {
-	
+	throw "...";
 }
