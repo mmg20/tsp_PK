@@ -1,9 +1,10 @@
 #include "TournamentSelection.h"
 #include "Individual.h"
+#include "rng.h"
 #include "Population.h"
 #include "engine.h"
 
-Individual TournamentSelection::select(Population pop)
+Individual TournamentSelection::selector(Population pop)
 {
 	int k = 3; // rozmiar turnieju
 	int prev, winner;

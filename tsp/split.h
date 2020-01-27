@@ -3,4 +3,4 @@
 
 using namespace std;
 
-vector<string> split(const string&, const char& delimiter = ' ');
+vector<string> split(const string, const char delimiter);

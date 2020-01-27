@@ -6,5 +6,8 @@
 class Selection
 {
 	public:
-		virtual Individual select(Population);
+		Selection();
+		Individual select(Population);
+	protected:
+		virtual Individual selector(Population);
 };

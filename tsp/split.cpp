@@ -3,7 +3,7 @@
 
 
 
-vector<string> split(const string& s, const char& delimiter)
+vector<string> split(const string s, const char delimiter)
 {
 	vector<string> tokens;
 	string token;

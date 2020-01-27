@@ -1,6 +1,6 @@
 #include "trim.h"
 
-string trim(const string& str)
+string trim(const string str)
 {
 	size_t first = str.find_first_not_of(' ');
 	if (first == string::npos)

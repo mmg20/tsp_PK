@@ -22,8 +22,6 @@ Matrix::Matrix(string fileName) {  // konstruktor tworz¹cy macierz i uzupe³niaj¹
 	getline(load, file, (char)load.eof());
 	load.close();
 
-
-
 	vector<vector<string>> tokens;
 
 	vector<string> lines = split(file, '\n');   //dzielenie stringa na linie

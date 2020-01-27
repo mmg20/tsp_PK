@@ -123,14 +123,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="chance.cpp" />
+    <ClCompile Include="Commander.cpp" />
+    <ClCompile Include="Crossover.cpp" />
     <ClCompile Include="engine.cpp" />
     <ClCompile Include="Individual.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="Mutation.cpp" />
+    <ClCompile Include="OxCrossover.cpp" />
     <ClCompile Include="Population.cpp" />
     <ClCompile Include="PsmMutation.cpp" />
-    <ClCompile Include="RsmMutation.cpp" />
+    <ClCompile Include="rng.cpp" />
     <ClCompile Include="split.cpp" />
     <ClCompile Include="TournamentSelection.cpp" />
     <ClCompile Include="trim.cpp" />
@@ -138,19 +142,27 @@
     <ClCompile Include="Selection.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="chance.h" />
+    <ClInclude Include="Commander.h" />
+    <ClInclude Include="Crossover.h" />
     <ClInclude Include="engine.h" />
     <ClInclude Include="Individual.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="Mutation.h" />
+    <ClInclude Include="OxCrossover.h" />
     <ClInclude Include="Population.h" />
     <ClInclude Include="PsmMutation.h" />
-    <ClInclude Include="RsmMutation.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="rng.h" />
     <ClInclude Include="Selection.h" />
     <ClInclude Include="split.h" />
     <ClInclude Include="TournamentSelection.h" />
     <ClInclude Include="trim.h" />
     <ClInclude Include="TSP.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tsp.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

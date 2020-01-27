@@ -7,10 +7,6 @@
 
 using namespace std;
 
-Individual operator+(Individual &a, Individual &b) {
-	return a;
-}
-
 Individual::Individual(int nodeCount) {    //tworzenie nowego osobnika z liczb¹ genów odpowiadaj¹c¹ liczbie wêz³ów(wielkoœci problemu)
 
 

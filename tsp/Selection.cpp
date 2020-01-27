@@ -2,7 +2,14 @@
 #include "Individual.h"
 #include "Population.h"
 
-Individual Selection::select(Population)
+Selection::Selection() { }
+
+Individual Selection::select(Population population)
 {
-	throw "Please implement Selection::select in derived class";
+	return this->selector(population);
+}
+
+Individual Selection::selector(Population)
+{
+	throw "Please implement Selection::selector in derived class";
 }

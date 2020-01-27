@@ -2,4 +2,4 @@
 
 using namespace std;
 
-string trim(const string&);
+string trim(const string);
