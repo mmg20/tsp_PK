@@ -29,7 +29,7 @@ Individual TSP::run(
 	{
 		vector<Individual> newPopMembers;
 
-		for (int j = 0; j < populationCount / 2; j++)
+		for (int j = 0; j < populationCount / 2; j++) // polowa populacji
 		{
 			// wybranie pierwszego osobnika do krzy¿owania
 			Individual ind1 = selection.select(population);
@@ -37,14 +37,14 @@ Individual TSP::run(
 			Individual ind2 = selection.select(population);
 
 			// krzy¿owanie lub nie, w zale¿noœci od wspó³czynnika
-			Individual child1 = crossover.cross(ind1, ind2);
+			Individual child1 = crossover.cross(ind1, ind2); 
 			Individual child2 = crossover.cross(ind2, ind1);
 
 			// mutowanie lub nie, w zale¿noœci od wspó³czynnika
 			mutation.mutate(child1);
 			mutation.mutate(child2);
 
-			newPopMembers.push_back(child1);
+			newPopMembers.push_back(child1); //wrzucanie 2 osobnikow do populacji
 			newPopMembers.push_back(child2);
 		}
 

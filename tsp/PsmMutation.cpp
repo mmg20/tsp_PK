@@ -10,12 +10,12 @@ PsmMutation::PsmMutation(double mutationFactor)
 
 void PsmMutation::mutator(Individual& individual)
 {
-	for (int i = 0; i < (int)individual.genome.size(); i++)
+	for (int i = 0; i < (int)individual.genome.size(); i++) //petla przez caly genotyp
 	{
-		if (this->shouldMutate())
+		if (this->shouldMutate()) //sprawdzamy czy mutowac, dla kazdego elementu genotypu
 		{
-			int pick = rng(0, individual.genome.size() - 1);
-			swap(individual.genome[i], individual.genome[pick]);
+			int pick = rng(0, individual.genome.size() - 1); // wybieramy losowy gen z przedzialu genotypu
+			swap(individual.genome[i], individual.genome[pick]); // zamieniamy miejscami aktualny gen na nowo wylosowany
 		}
 	}
 }
